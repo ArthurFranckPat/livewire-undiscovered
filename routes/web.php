@@ -18,4 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::post('/livewire',function (){
+    dd(request('callMethod'));
+    return request()->all();
+});
